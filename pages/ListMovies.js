@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 
 import { Card } from 'primereact/card';
 import styles from '../styles/Home.module.css'
+import Header from '../components/Header';
 
 
 export default function ListMovie() {
@@ -19,6 +20,7 @@ export default function ListMovie() {
 
     return (
         <div className='grid '>
+            <Header/>
             <div className='col-12 flex flex-wrap flex-row'>
                 {movie.map((item) => {
                     return (
